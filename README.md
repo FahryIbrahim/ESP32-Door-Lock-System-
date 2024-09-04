@@ -179,6 +179,7 @@ _Include an image of the wiring diagram here._
   _Include an image of the 4x3 keypad here._
 
 - **ESP32**
+  
 ![image](https://github.com/user-attachments/assets/7c672bcb-6fa9-4afc-bb24-f2c2c3f6fc9d)
 
 
