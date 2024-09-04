@@ -171,7 +171,7 @@ _Include an image of the wiring diagram here._
 
 - **Servo 9g**
 
-![image](https://github.com/user-attachments/assets/315de55f-4973-4684-b5b2-56f8f02758d9)
+![image](https://github.com/user-attachments/assets/68b3a5e2-b8f0-4e6d-b69b-0b5ba62687cb)
 
 
 - **LCD I2C (16x2)**
@@ -181,7 +181,7 @@ _Include an image of the wiring diagram here._
 
 - **Keypad 4x3**
 
-![image](https://github.com/user-attachments/assets/7963ab97-43c4-4d4d-af2c-5c6fcbefda3f)
+![424d2263-98f3-415d-8938-4a64298e387d(1)](https://github.com/user-attachments/assets/6a34080d-987b-4246-843d-5a2d11ffde7f)
 
 
 - **ESP32**
