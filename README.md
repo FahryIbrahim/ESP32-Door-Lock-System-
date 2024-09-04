@@ -1,77 +1,77 @@
-ESP32 Door Lock System with Servo, LCD I2C, and 4x3 Keypad
+# ESP32 Door Lock System with Servo, LCD I2C, and 4x3 Keypad
 
 This project demonstrates how to create a simple door lock system using an ESP32 microcontroller, a 9g servo motor, an I2C LCD display, and a 4x3 keypad. The system allows you to enter a password on the keypad, and if the correct password is entered, the servo unlocks the door.
-Table of Contents
 
-    Introduction
-    Components
-    Circuit Diagram and Wiring
-    Libraries Installation
-    Code
-    Images
-    Usage
+## Table of Contents
+- [Introduction](#introduction)
+- [Components](#components)
+- [Circuit Diagram and Wiring](#circuit-diagram-and-wiring)
+- [Libraries Installation](#libraries-installation)
+- [Code](#code)
+- [Images](#images)
+- [Usage](#usage)
 
-Introduction
-
+## Introduction
 This project is a simple and effective way to implement a password-protected lock using an ESP32. The system displays the password input on an LCD and controls a servo motor to lock or unlock the door based on the entered password.
-Components
 
-    ESP32
-    Servo Motor (9g)
-    LCD I2C (16x2)
-    Keypad 4x3
-    Breadboard and Jumpers
-    Power Supply
+## Components
+- **ESP32**
+- **Servo Motor (9g)**
+- **LCD I2C (16x2)**
+- **Keypad 4x3**
+- **Breadboard and Jumpers**
+- **Power Supply**
 
-Circuit Diagram and Wiring
-
+## Circuit Diagram and Wiring
 Below is the wiring setup for the components. The pinout follows this order from left to right:
 
-    Column 2: GPIO 13
-    Row 1: GPIO 33
-    Column 1: GPIO 27
-    Row 4: GPIO 14
-    Column 3: GPIO 32
-    Row 3: GPIO 26
-    Row 2: GPIO 25
+- **Column 2:** GPIO 13
+- **Row 1:** GPIO 33
+- **Column 1:** GPIO 27
+- **Row 4:** GPIO 14
+- **Column 3:** GPIO 32
+- **Row 3:** GPIO 26
+- **Row 2:** GPIO 25
 
-Wiring Table
-Component	Pin on ESP32	Pin on Component
-Keypad C1	GPIO 27	Column 1
-Keypad C2	GPIO 13	Column 2
-Keypad C3	GPIO 32	Column 3
-Keypad R1	GPIO 33	Row 1
-Keypad R2	GPIO 25	Row 2
-Keypad R3	GPIO 26	Row 3
-Keypad R4	GPIO 14	Row 4
-LCD SDA	GPIO 21	SDA
-LCD SCL	GPIO 22	SCL
-Servo	GPIO 15	Control (Signal)
-Servo	3.3V or 5V	VCC
-Servo	GND	GND
-Circuit Diagram
+### Wiring Table
 
-Include your circuit diagram here.
-Libraries Installation
+| Component | Pin on ESP32 | Pin on Component |
+|-----------|--------------|------------------|
+| Keypad C1 | GPIO 27      | Column 1         |
+| Keypad C2 | GPIO 13      | Column 2         |
+| Keypad C3 | GPIO 32      | Column 3         |
+| Keypad R1 | GPIO 33      | Row 1            |
+| Keypad R2 | GPIO 25      | Row 2            |
+| Keypad R3 | GPIO 26      | Row 3            |
+| Keypad R4 | GPIO 14      | Row 4            |
+| LCD SDA   | GPIO 21      | SDA              |
+| LCD SCL   | GPIO 22      | SCL              |
+| Servo     | GPIO 15      | Control (Signal) |
+| Servo     | 3.3V or 5V   | VCC              |
+| Servo     | GND          | GND              |
+
+### Circuit Diagram
+_Include your circuit diagram here._
+
+## Libraries Installation
 
 Before uploading the code to your ESP32, make sure to install the following libraries:
 
-    Keypad Library
-        Go to the Arduino IDE: Sketch -> Include Library -> Manage Libraries.
-        Search for Keypad and install it.
+1. **Keypad Library**
+   - Go to the Arduino IDE: `Sketch` -> `Include Library` -> `Manage Libraries`.
+   - Search for `Keypad` and install it.
 
-    LiquidCrystal I2C Library
-        Go to the Arduino IDE: Sketch -> Include Library -> Manage Libraries.
-        Search for LiquidCrystal I2C and install it.
+2. **LiquidCrystal I2C Library**
+   - Go to the Arduino IDE: `Sketch` -> `Include Library` -> `Manage Libraries`.
+   - Search for `LiquidCrystal I2C` and install it.
 
-    ESP32Servo Library
-        Go to the Arduino IDE: Sketch -> Include Library -> Manage Libraries.
-        Search for ESP32Servo and install it.
+3. **ESP32Servo Library**
+   - Go to the Arduino IDE: `Sketch` -> `Include Library` -> `Manage Libraries`.
+   - Search for `ESP32Servo` and install it.
 
-Code
+## Code
 
-cpp
-
+```cpp
 #include <Keypad.h>
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
@@ -160,24 +160,32 @@ void loop() {
     isLocked = true; // Door is locked again
   }
 }
+```
 
-Images
-Wiring
+## Images
 
-Include an image of the wiring diagram here.
-Components
+### Wiring
+_Include an image of the wiring diagram here._
 
-    Servo 9g Include an image of the servo 9g here.
+### Components
 
-    LCD I2C (16x2) Include an image of the LCD I2C here.
+- **Servo 9g**
+  _Include an image of the servo 9g here._
 
-    Keypad 4x3 Include an image of the 4x3 keypad here.
+- **LCD I2C (16x2)**
+  _Include an image of the LCD I2C here._
 
-    ESP32 Include an image of the ESP32 here.
+- **Keypad 4x3**
+  _Include an image of the 4x3 keypad here._
 
-Usage
+- **ESP32**
+  _Include an image of the ESP32 here._
 
-    Connect the components as described in the wiring section.
-    Upload the provided code to your ESP32.
-    Power on the ESP32, and the LCD will prompt you to enter a password.
-    Enter the password using the keypad. If the password is correct, the servo will unlock the door. If incorrect, it will remain locked.
+## Usage
+
+1. Connect the components as described in the wiring section.
+2. Upload the provided code to your ESP32.
+3. Power on the ESP32, and the LCD will prompt you to enter a password.
+4. Enter the password using the keypad. If the password is correct, the servo will unlock the door. If incorrect, it will remain locked.
+
+---
