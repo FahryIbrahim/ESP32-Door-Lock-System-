@@ -1,4 +1,4 @@
-# ESP32 Door Lock System with Servo, LCD I2C, and 4x3 Keypad
+![image](https://github.com/user-attachments/assets/17ce543f-9311-4cbe-b226-a75d69dd928d)# ESP32 Door Lock System with Servo, LCD I2C, and 4x3 Keypad
 
 This project demonstrates how to create a simple door lock system using an ESP32 microcontroller, a 9g servo motor, an I2C LCD display, and a 4x3 keypad. The system allows you to enter a password on the keypad, and if the correct password is entered, the servo unlocks the door.
 
@@ -179,7 +179,8 @@ _Include an image of the wiring diagram here._
   _Include an image of the 4x3 keypad here._
 
 - **ESP32**
-  _Include an image of the ESP32 here._
+![image](https://github.com/user-attachments/assets/7c672bcb-6fa9-4afc-bb24-f2c2c3f6fc9d)
+
 
 ## Usage
 
