@@ -170,13 +170,19 @@ _Include an image of the wiring diagram here._
 ### Components
 
 - **Servo 9g**
-  _Include an image of the servo 9g here._
+
+![image](https://github.com/user-attachments/assets/315de55f-4973-4684-b5b2-56f8f02758d9)
+
 
 - **LCD I2C (16x2)**
-  _Include an image of the LCD I2C here._
+
+![image](https://github.com/user-attachments/assets/a1bf6f6c-21d8-4c4c-bd72-bc2ae5ac26ea)
+
 
 - **Keypad 4x3**
-  _Include an image of the 4x3 keypad here._
+
+![image](https://github.com/user-attachments/assets/7963ab97-43c4-4d4d-af2c-5c6fcbefda3f)
+
 
 - **ESP32**
   
